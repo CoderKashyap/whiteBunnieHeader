@@ -1,0 +1,402 @@
+/* Reset some default browser styles */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+/* Body default styling */
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 1.5;
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    /* color: #333; */
+    /* background-color: #f5f5f5; */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ul,
+ol {
+    list-style: none;
+} */
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Ensure full height on mobile browsers */
+html,
+body {
+    height: 100%;
+    background-color: #838383;
+}
+
+
+
+
+
+/* Navbar container */
+.navbar {
+    overflow: hidden;
+    background: white;
+    color: black;
+    font-family: Arial;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.6rem;
+}
+
+/* Links inside the navbar */
+.navbar .middleCont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.headerRightContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 1.5rem;
+}
+
+.headerRightContent a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.headerRightContent i {
+    cursor: pointer;
+}
+
+/* Dropdown button */
+.dropdown {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    padding: 8px 18px;
+    background-color: inherit;
+    font: inherit;
+    margin: 0;
+}
+
+/* The dropdown container */
+.dropbtn {
+    padding: 8px 16px;
+}
+
+/* Add a background color to dropdown button on hover */
+.dropdown:hover .dropbtn {
+    /* background-color: rgb(164, 193, 237); */
+    background-color: rgb(207, 219, 237);
+    border-radius: 12px;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    z-index: 1;
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Mega Menu header, if needed */
+.dropdown-content .header {
+    opacity: 0;
+    padding: 0px;
+}
+
+@media (max-width: 768px) {
+    .row {
+        border: 2px solid black;
+        overflow-x: scroll;
+        height: 100vh;
+    }
+}
+
+/* Clear floats after the columns */
+.row {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 25px;
+    background-color: #f9f9f9;
+    padding: 18px;
+}
+
+.rowInside {
+    display: flex;
+    align-items: start;
+    padding: 1px;
+    flex-wrap: wrap;
+    gap: 10px;
+    background-color: #f9f9f9;
+    /* border: 2px solid black; */
+}
+
+
+.column {
+    padding: 12px;
+    min-width: 17rem;
+    /* height: 250px; */
+    height: auto;
+    border-radius: 12px;
+    background-color: #f3f3f3;
+}
+
+/* Style links inside the columns */
+.column a {
+    color: black;
+    padding: 5px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-align: left;
+    border-radius: 12px;
+    font-size: 14px;
+}
+
+.column h3{
+    padding: 8px 0px;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.column h3:hover .insideH3Heading{
+    background-color: rgb(213, 224, 240);
+    font-size: 15px;
+}
+
+.insideH3Heading{
+    padding: 5px;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.column h3 i{
+    font-size: 12px;
+}
+
+.sizeOfBullets{
+    font-size: 5px;
+}
+
+/* Add a background color on hover */
+.column a:hover {
+    /* background-color: #ddd; */
+    color: green;
+}
+
+.insideH3Icon{
+    height: 24px;
+    width: 24px;
+    /* border: 1px solid black; */
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.column1 {
+    padding: 8px;
+    background-color: #f3f3f3;
+    width: 35%;
+    /* width: 500px; */
+    gap: 10px;
+    border-radius: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+}
+
+/* Style links inside the columns */
+.column1 a {
+    color: black;
+    padding: 8px;
+    text-decoration: none;
+    width: 49%;
+    border-radius: 12px;
+}
+
+/* Add a background color on hover */
+.column1 a:hover {
+    background-color: #e8e8e8;
+}
+
+.column1 .mr-4 {
+    margin-right: 6px;
+}
+
+
+
+.row3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* gap: 20px; */
+    background-color: #f9f9f9;
+    padding: 16px;
+}
+
+.column3 {
+    padding: 10px;
+    /* border: 2PX solid black; */
+    border-radius: 12px;
+}
