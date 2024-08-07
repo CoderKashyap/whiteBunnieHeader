@@ -247,6 +247,7 @@ body {
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
@@ -273,7 +274,7 @@ body {
     justify-content: center;
     gap: 25px;
     background-color: #f9f9f9;
-    padding: 18px;
+    padding: 8px 18px;
 }
 
 .rowInside {
@@ -309,7 +310,7 @@ body {
     font-size: 14px;
 }
 
-.column h3{
+.column h3 {
     padding: 8px 0px;
     display: flex;
     align-items: center;
@@ -318,22 +319,23 @@ body {
     cursor: pointer;
 }
 
-.column h3:hover .insideH3Heading{
+.column h3:hover .insideH3Heading {
     background-color: rgb(213, 224, 240);
     font-size: 15px;
+    color: black;
 }
 
-.insideH3Heading{
+.insideH3Heading {
     padding: 5px;
     border-radius: 6px;
     font-size: 15px;
 }
 
-.column h3 i{
+.column h3 i {
     font-size: 12px;
 }
 
-.sizeOfBullets{
+.sizeOfBullets {
     font-size: 5px;
 }
 
@@ -343,7 +345,7 @@ body {
     color: green;
 }
 
-.insideH3Icon{
+.insideH3Icon {
     height: 24px;
     width: 24px;
     /* border: 1px solid black; */
@@ -375,13 +377,21 @@ body {
     border-radius: 12px;
 }
 
-/* Add a background color on hover */
-.column1 a:hover {
-    background-color: #e8e8e8;
+.industryMenu {
+    padding: 5px;
+    border-radius: 6px;
+    font-size: 14px;
 }
+
+/* Add a background color on hover */
+.column1 a:hover .industryMenu {
+    background-color: rgb(213, 224, 240);
+}
+
 
 .column1 .mr-4 {
     margin-right: 6px;
+    font-size: 15px;
 }
 
 
